@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <nav class="navigation">
+        <h1>Im(AI)</h1>
+        <ul>
+            <li>About</li>
+            <li>FAQ</li>
+        </ul>
+
+    </nav>
+
+
+    
+
+    <div class="details">
+        
+
+        
+        
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <h1>Enter patient details</h1>
+            <div>
+            <label for="First Name">First Name:*</label>
+            <input type="text" id="First Name" name="First Name" placeholder="Enter your first name" required>
+            </div>
+
+            <div>
+                <label for="Last Name">Last Name:*</label>
+                <input type="text" id="Last Name" name="Last Name" placeholder="Enter your last name" required>
+            </div>
+
+            <div>
+            <label for="age">Age:*</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+
+            <div>
+                <label for="occupation">Patient occupation*</label>
+                <input type="text" id="occupation" name="occupation" placeholder="Enter here" required>
+            </div>
+
+            <div>
+            <label for="gender">Gender:*</label>
+            <select name="gender" id="gender">
+                <option value="null">choose</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="third gender">Third Gender</option>
+            </select>
+            </div>
+
+            <div>
+            <label for="prev_eye_surgery">Previous eye surgeries:*</label>
+            <input type="text" id="prev_eye_surgery" name="prev_eye_surgery" placeholder="Enter here"  value="none" required>
+            </div>
+
+
+            <div>
+                <label for="existing_ailments">Existing Ailments</label>
+                <input type="text" id="existing_ailments" name="existing_ailments" placeholder="Enter here"  value="none" required>
+            </div>
+
+            <div>
+                <label for="high_bp">High B.P:</label>
+                <select name="high_bp" id="high_bp">
+                    <option value="null">choose</option>
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                </select>
+            </div>
+                
+
+
+            <div>
+                <label for="Diabetes">Diabetes:</label>
+                <select name="Diabetes" id="Diabetes">
+                    <option value="null">choose</option>
+
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Chief complaints">Chief complaints:</label>
+                <select name="Chief complaints" id="Chief complaints" multiple>
+                    <option value="null">choose</option>
+
+                    <option value="Blurred vision">Blurred vision</option>
+                    <option value="Double vision">Double vision</option>
+                    <option value="Dry eyes">Dry eyes</option>
+                    <option value="Red eyes">Red eyes</option>
+                    <option value="Discharge">Discharge</option>
+                    <option value="Itchy Eyes">Itchy Eyes</option>
+                    <option value="Headaches">Headaches</option>
+                    <option value="Flashes/Floaters">Flashes/Floaters</option>
+                    <option value="Light sensitive">Light sensitive</option>
+                    <!-- <option value="No">No</option> -->
+
+                </select>
+            </div>
+
+            <div>
+                <label for="email">email id:</label>
+                <input type="text" id="email" name="email" placeholder="Enter here" required>
+            </div>
+
+
+
+            <div>
+                <label for="contact">Contact:*</label>
+                <input type="number" id="contact" name="contact" placeholder="Enter your contact no." required>
+            </div>
+
+
+
+            <div>
+                <label for="relative_contact">Contact of the closest relative:</label>
+                <input type="relative_contact" id="relative_contact" name="relative_contact" placeholder="Enter here" required>
+            </div>
+
+            <div>
+                <label for="existing_doctor">Existing Doctor/Hospital Name:</label>
+                <input type="text" id="existing_doctor" name="existing_doctor" placeholder="Enter here" required>
+            </div>
+
+
+
+
+            <div>
+                <label for="family_history">family history of eye disease: <br>[If any,mention their relation with the patient]</label><br>
+                <input type="text" id="family_history" name="family_history" placeholder="Enter here" >
+            </div>
+
+            <div>
+                <label for="Medical Records">Medical Records:</label>
+                <input type="file" id="Medical Records"  name="Medical Records" required>
+            </div>
+
+
+            <div>
+                <label for="Glaucoma">Glaucoma:</label>
+                <select name="Glaucoma" id="Glaucoma">
+                    <option value="null">choose</option>
+
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Macular Degeneration">Macular Degeneration:</label>
+                <select name="Macular Degeneration" id="Macular Degeneration">
+                    <option value="null">choose</option>
+
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="hosp">Hosp Name:</label>
+                <input type="text" id="hosp" name="hosp" placeholder="Enter the hosp name" required>
+            </div>
+
+
+
+            <div>
+                <label for="fundus">Fundus Image:</label>
+                <input type="file" id="fundus"  name="fundus" required>
+            </div>
+            <h3>*columns marked with * are required</h3>
+
+
+            <div>
+                <input type="submit" value="submit">
+            </div>
+
+
+
+        </form> 
+        
+
+    </div>
+
+    
+</body>
+</html>

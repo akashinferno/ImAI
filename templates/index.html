@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Im(AI)</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    
+</head>
+<body>
+    <nav class="navigation">
+        <h1>Im(AI)</h1>
+        <ul>
+            <li>About</li>
+            <li>FAQ</li>
+        </ul>
+
+    </nav>
+
+
+
+
+
+    <div class="about">
+        <h1>About Im(AI)</h1>
+        
+        <p>&bull; Im(AI) (pronounced /ɪmɐɪ̯/, from Tamil word இமை ) is a comprehensive teleophthalmology platform for complete vision screening – right from start to end.</p>
+        <p>&bull; Optimized for the Indian environment, Im(AI) uses ML models to screen for retinal diseases and sends the diagnosis along with the affected images directly to the ophthalmologist.</p>
+        <p>&bull; Imai can be a potential solution to vision care in underserved areas, with various features ensuring a complete diagnostic experience with no compromise on health.</p>
+        <p>&bull; An affordable teleophthalmology platform saves time, cost, and effort from ophthalmologists – quickening diagnosis and earning “lost time” for more people to be treated.</p>
+        
+    </div>
+
+
+    <div class="why">
+        <h1>Why Im(AI)?</h1>
+        <!-- flex container -->
+        <div class="why-container">
+            <div>
+                <img src="{{url_for('static',filename='showstopper-1.png')}}" alt="">
+                <p>Capture and upload eye images for analysis  and diagnosis</p>
+            </div>
+
+            <div>
+                <img src="{{url_for('static',filename='showstopper-2.png')}}" alt="">
+                <p>Video calls/chats with eye care professionals - discuss diagnoses & treatment plans remotely</p>
+            </div>
+            
+            <div>
+                <img src="{{url_for('static',filename='showstopper-3.png')}}" alt="">
+                <p>Integrated vision tests - Snellen chart and color assessments for initial diagnostic insights</p>
+            </div>
+
+            <div>
+                <img src="{{url_for('static',filename='showstopper-4.png')}}" alt="">
+                <p>Aid follow-up tests & appointments, ensuring continuous monitoring and management of eye.</p>
+            </div>
+
+            <div>
+                <img src="{{url_for('static',filename='showstopper-5.png')}}" alt="">
+                <p>Ensures patient privacy by secure storage of medical records</p>
+            </div>
+            <!--             
+            <div>
+                <img src="{{url_for('static',filename='showstopper-6.png')}}" alt="">
+                <p>Mitigates language barriers by integrating regional languages</p>
+            </div>
+             -->
+
+            <div>
+                <img src="{{url_for('static',filename='showstopper-7.png')}}" alt="">
+                <p>Reduces manpower required to conduct an eye camp in a rural area by half</p>
+            </div>
+            
+            
+
+        </div>
+
+
+
+    </div>
+
+    <div class="vision-tests">
+        <h1>Vision Tests:</h1>
+                
+    </div>
+
+
+
+
+    <div class="test1">
+        <h1>1.Basic Vision Test</h1>
+        <h2>Includes:</h2>
+        <ul>
+            <li>Eye power check</li>
+            <li>Color assesment test</li>
+        </ul>
+        <form action="/1tutorial">
+            <button class="tuto">Tutorial</button>
+        </form>
+
+        <form action="/L_eyetest">
+            <button>Start Session</button>
+        </form>
+    </div>
+
+
+
+    <div class="test2">
+        <h1>2.Advanced Vision Test</h1>
+        <h2>Includes:</h2>
+        <ul>
+            <li>Eye power check</li>
+            <li>Fundus Image Scan</li>
+            <li>Diagnosis by AI</li>
+            <li>Checking by professional ophthalmologist</li>
+        </ul>
+        <h3>*Should be taken with assistance of a nurse</h3>
+        <form action="/2tutorial">
+            <button class="tuto">Tutorial</button>
+        </form>
+
+        <form action="/L_eyetest">
+            <button>Start Session</button>
+        </form>
+    </div>
+
+
+
+    <div class="diagnosis">
+        <h1>Are you a Doctor?</h1>
+        <h1>Run diagnosis!</h1>
+
+        <form action="/3tutorial">
+            <button class="tuto">Tutorial</button>
+        </form> 
+        <br> <br>
+
+
+        <form action="/diagnosis" method="post">
+            <label for="docid">Enter your Doctor Id</label>
+            <input type="text"  id="docid" name="docid" placeholder="Doctor Id" required><br> <br>
+
+            <button type="submit">Run Diagnosis</button>
+            
+        </form>
+        <br>
+
+        
+<!-- 
+        <form action="/diagnosis">
+            <button>Run Diagnosis</button>
+        </form>
+         -->
+
+
+
+
+
+    </div>
+
+    
+
+        
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imAI</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <!-- <nav class="navigation">
+        <h1>Im(AI)</h1>
+        <ul>
+            <li>About</li>
+            <li>FAQ</li>
+        </ul>   
+
+    </nav> -->
+
+    <div class='eyetest'>
+        <div style="position: fixed;top: 168px; left: 0; width: 100%; color: #721c24; padding: 10px; font-size: 25px;">
+            Please follow the instructions carefully. <br> <br>
+            Ensure the device is placed at 50 cm away from you<br><br>
+            Close your left eye while taking the test. <br><br>
+
+        </div>
+        <center>
+
+
+
+
+        <img src="{{url_for('static',filename='snellen_eye_chart.png')}}" style="margin-top: 9px;" alt="power chart">
+        <form action="/R_eyetest" method="POST" style="position: absolute; top: 71px;">
+            <input type="hidden" name="line" id="L_line1" value="Poor Vision">
+            <button  type="submit">Cannot see from this line</button>
+        </form>     
+
+        <form action="/R_eyetest" method="POST" style="position: absolute; top: 226px;">
+            <input type="hidden" name="line" id="L_line2" value="Poor Vision">
+            <button  type="submit">Cannot see from this line</button>
+        </form>     
+
+        <form action="/R_eyetest"  method="POST" style="position: absolute; top: 326px;">
+            <input type="hidden" name="line" id="L_line3" value="Near Normal Vision">
+            <button  type="submit">Cannot see from this line</button>
+        </form>     
+
+        <form action="/R_eyetest" method="POST" style="position: absolute; top: 391px;">
+            <input type="hidden" name="line" id="L_line4" value="Near Normal Vision">
+            <button  type="submit">Cannot see from this line</button>
+        </form>     
+
+        <form action="/R_eyetest" method="POST" style="position: absolute; top: 445px;">
+            <input type="hidden" name="line" id="L_line5" value="Near Normal Vision">
+            <button  type="submit">Cannot see from this line</button>
+        </form>     
+
+        <form action="/R_eyetest" method="POST" style="position: absolute; top: 524px;">  
+            <input type="hidden" name="line" id="L_line6" value="Normal Vision">
+            <button  type="submit">Cannot see from this line</button>
+        </form>     
+
+        <form action="/R_eyetest" method="POST" style="position: absolute; top: 581px;">
+            <input type="hidden" name="line" id="L_line7" value="Normal Vision">
+            <button  type="submit">Cannot see from this line</button>
+        </form>    
+
+        <form action="/R_eyetest" method="POST" style="position: absolute; top: 656px;">
+            <input type="hidden" name="line" id="L_line8" value="Normal Vision">
+            <button  type="submit">Cannot see from this line</button>
+        </form> 
+
+        <form action="/R_eyetest" method="POST" style="position: absolute; top: 705px;">
+            <input type="hidden" name="line" id="L_line9" value="Normal Vision">
+            <button  type="submit">Cannot see from this line</button>
+        </form>     
+
+        
+            
+    </div>
+</center>
+    
+</body>
+</html>
